@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Guessing Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-200 flex justify-center items-center h-screen">
+
+    <!-- game container -->
+    <div class="bg-white p-8 rounded-lg shadow-md w-100">
+
+        <!-- target and guess color -->
+        <h1 class="text-2xl font-bold mb-4 text-center"> Hex Color Guessing Game</h1>
+        <div class="grid grid-cols-2 gap-5 mb-4">
+            <div id="targetcolorDisplay" class=" h-40 rounded-lg text-center pt-16 border-2 border-dark-300"> Target color </div>
+            <div id="guessColorDisplay" class=" h-40 rounded-lg text-center pt-16 border-2 border-dark-300"> Guess Color</div>
+        </div>
+        <!-- input section -->
+        <p>Hex codes must be exactly 6 characters long and contain only 0-9 or A-F.</p> 
+        <div class="flex items-center mb-4">
+             
+
+            <div class="flex items-center  border border-gray-500 rounded-l-md border-r-0"> 
+                <p class="text-gray-600 text-2xl pl-2">#</p>
+                <input id="colorInput" type="text" class="px-1 py-1 w-28 focus:outline-none bg-light-500 text-xl uppercase" placeholder="Guess..." maxlength="6" minlength="6"  pattern="^#[0-9A-Fa-f]{6}$" title="Enter a valid 6-character hex color code" required/>
+            </div>
+            
+            <button id="guessButton" onclick="guessingColor()" class="bg-green-500  hover:bg-green-900 text-white px-4 py-2 rounded-r-lg outline-none border-0">Check</button>
+        </div>
+
+        <!-- input check section -->
+        <p id="resultMessage" class="text-gray-700 mb-4"></p>
+        <p id="score"></p>
+
+        <p class="text-center font-bold text-xl"> Guesses </p>
+        <hr>
+
+        <!-- Guess section -->
+        <section id="guessSection">
+           
+        </section>
+        
+        <button onclick="newGame()" class="bg-green-500  hover:bg-green-900 text-white px-4 py-2 rounded-lg">New Game</button>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
