@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LinkedIn landing page </title>
+  <!-- Include Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+ 
+    <!-- Navigation bar -->
+    <nav class="bg-white px-0 md:px-20 2xl:px-0 shadow-md shadow-gray-100">
+      <div class="container mx-auto py-2 2xl:w-3/5">
+          <div class="flex items-center justify-between ">
+
+            <!-- home logo button nav part-1 -->
+            <div class="flex">
+                <!-- LinkedIn logo -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#0A66C2" data-supported-dps="24x24"
+                  width="45" height="45" focusable="false">
+                  <path
+                    d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z">
+                  </path>
+                </svg>
+              <!-- Search bar -->
+              <div
+                class="flex items-center lg:w-72 2xl:w-72 py-2 lg:border 2xl:border lg:focus-within:border-gray-800 2xl:focus-within:border-gray-800  border-dark-50 rounded-sm gap-2 bg-white lg:bg-gray-100 2xl:bg-gray-100 ">
+                <svg class="ml-2" viewBox="5 -1 12 25" height="17" width="17" fill="#686b78">
+                  <path
+                    d="M17.6671481,17.1391632 L22.7253317,22.1973467 L20.9226784,24 L15.7041226,18.7814442 C14.1158488,19.8024478 12.225761,20.3946935 10.1973467,20.3946935 C4.56550765,20.3946935 0,15.8291858 0,10.1973467 C0,4.56550765 4.56550765,0 10.1973467,0 C15.8291858,0 20.3946935,4.56550765 20.3946935,10.1973467 C20.3946935,12.8789625 19.3595949,15.3188181 17.6671481,17.1391632 Z M10.1973467,17.8453568 C14.4212261,17.8453568 17.8453568,14.4212261 17.8453568,10.1973467 C17.8453568,5.97346742 14.4212261,2.54933669 10.1973467,2.54933669 C5.97346742,2.54933669 2.54933669,5.97346742 2.54933669,10.1973467 C2.54933669,14.4212261 5.97346742,17.8453568 10.1973467,17.8453568 Z">
+                  </path>
+                </svg>
+                <input class="bg-gray-100 w-full focus:outline-none hidden lg:block 2xl:block " type="text" placeholder="Search">
+              </div>
+            </div>
+          
+            <!-- nav part two -->
+            <div class="flex justify-between items-center flex-shrink">
+                  <!-- home -->
+                <div class="flex flex-col items-center w-16 lg:w-20 2xl:w-20 hover:border-gray-700 border-transparent border-b-2 transition duration-300 ease-in-out">
+                  <a href="" class="flex flex-col items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="#666666"
+                    class="mercado-match" width="24" height="24" focusable="false">
+                    <path d="M23 9v2h-2v7a3 3 0 01-3 3h-4v-6h-4v6H6a3 3 0 01-3-3v-7H1V9l11-7 5 3.18V2h3v5.09z"></path>
+                  </svg>
+                  <p class="text-xs hidden lg:block 2xl:block"> Home </p>
+                  </a>  
+                </div>
+                <!-- connection -->
+                <div class="w-16 lg:w-20 2xl:w-20 hover:border-b-2 hover:border-gray-700 border-transparent border-b-2 transition duration-300 ease-in-out">
+                  <a href="" class="flex flex-col items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="#666666" class="mercado-match" width="24" height="24" focusable="false">
+                      <path d="M12 16v6H3v-6a3 3 0 013-3h3a3 3 0 013 3zm5.5-3A3.5 3.5 0 1014 9.5a3.5 3.5 0 003.5 3.5zm1 2h-2a2.5 2.5 0 00-2.5 2.5V22h7v-4.5a2.5 2.5 0 00-2.5-2.5zM7.5 2A4.5 4.5 0 1012 6.5 4.49 4.49 0 007.5 2z"></path>
+                    </svg>
+                  <p class="text-xs hidden lg:block 2xl:block"> My Network </p>
+                  </a>
+                </div>
+    
+                <!-- jobs -->
+                <div class="w-16 lg:w-20 2xl:w-20 hover:border-gray-700 border-transparent border-b-2 transition duration-300 ease-in-out">
+                  <a href="" class="flex flex-col items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="#666666" class="mercado-match" width="24" height="24" focusable="false">
+                      <path d="M17 6V5a3 3 0 00-3-3h-4a3 3 0 00-3 3v1H2v4a3 3 0 003 3h14a3 3 0 003-3V6zM9 5a1 1 0 011-1h4a1 1 0 011 1v1H9zm10 9a4 4 0 003-1.38V17a3 3 0 01-3 3H5a3 3 0 01-3-3v-4.38A4 4 0 005 14z"></path>
+                    </svg>
+                  <p class="text-xs hidden lg:block 2xl:block"> jobs </p>
+                  </a>
+                
+                </div>
+    
+                <!-- Messaging -->
+                <div class="w-16 lg:w-20 2xl:w-20 hover:border-gray-700 border-transparent border-b-2 transition duration-300 ease-in-out">
+                  <a href="" class="flex flex-col items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="#666666" class="mercado-match" width="24" height="24" focusable="false">
+                      <path d="M16 4H8a7 7 0 000 14h4v4l8.16-5.39A6.78 6.78 0 0023 11a7 7 0 00-7-7zm-8 8.25A1.25 1.25 0 119.25 11 1.25 1.25 0 018 12.25zm4 0A1.25 1.25 0 1113.25 11 1.25 1.25 0 0112 12.25zm4 0A1.25 1.25 0 1117.25 11 1.25 1.25 0 0116 12.25z"></path>
+                    </svg>
+                  <p class="text-xs hidden lg:block 2xl:block"> Messaging </p>
+                  </a>
+                </div>
+    
+                <!-- Notification -->
+                <div class="w-16 lg:w-20 2xl:w-20" >
+                  <a href="" class="flex flex-col items-center hover:border-gray-700 border-transparent border-b-2 transition duration-300 ease-in-out">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="#666666" class="mercado-match" width="24" height="24" focusable="false">
+                      <path d="M22 19h-8.28a2 2 0 11-3.44 0H2v-1a4.52 4.52 0 011.17-2.83l1-1.17h15.7l1 1.17A4.42 4.42 0 0122 18zM18.21 7.44A6.27 6.27 0 0012 2a6.27 6.27 0 00-6.21 5.44L5 13h14z"></path>
+                    </svg>
+                  <p class="text-xs hidden lg:block 2xl:block"> Notification </p>
+                  </a>
+                </div>
+    
+                <!-- me -->
+                <div class="w-16 lg:w-20 2xl:w-20 hidden sm:block md: block lg:block 2xl:block">
+                  <a href="" class="flex flex-col items-center hover:border-gray-700 border-transparent border-b-2 transition duration-300 ease-in-out w-full">
+                    <div class="h-10 w-10 lg:h-5 lg:w-5  rounded-full overflow-hidden border-4 border-white  mx-auto mb-1">
+                      <img class="w-full h-full object-cover " src="./assets/profile-image.jpg" alt="Profile image">
+                    </div>
+                      
+                  <p class="text-xs hidden lg:block 2xl:block "> Me </p>
+                  </a>
+                
+                </div>
+    
+                <!-- line break -->
+                <div class="h-10 border-l-2 border-gray-400  hidden sm:block md: block lg:block 2xl:block"></div>
+    
+                <!-- for business -->
+                <div class="w-16 lg:w-20 2xl:w-20 hover:border-gray-700 border-transparent border-b-2 transition duration-300 ease-in-out  hidden sm:block md: block lg:block 2xl:block">
+                  <a href="" class="flex flex-col items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="#666666" class="mercado-match" width="24" height="24" focusable="false">
+                      <path d="M3 3h4v4H3zm7 4h4V3h-4zm7-4v4h4V3zM3 14h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4zM3 21h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4z"></path>
+                    </svg>
+                  <p class="text-xs hidden lg:block 2xl:block"> For Business </p>
+                  </a>
+                </div>
+    
+                <!-- learning -->
+                <div class="w-16 lg:w-20 2xl:w-20 hover:border-gray-700 border-transparent border-b-2 transition duration-300 ease-in-out  hidden sm:block md: block lg:block 2xl:block">
+                  <a href=""  class="flex flex-col items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="#666666" width="24" height="24" focusable="false">
+                      <path d="M22 5v14H2V5h20m1-2H1a1 1 0 00-1 1v16a1 1 0 001 1h22a1 1 0 001-1V4a1 1 0 00-1-1z"></path>
+                      <path d="M2 5v14h10V5H2zm8 12H4v-2h6v2zm0-4H4v-2h6v2zm0-4H4V7h6v2z" style="isolation:isolate" opacity=".25"></path>
+                      <path style="isolation:isolate" opacity=".6" d="M14 7h6v2h-6zM14 11h6v2h-6zM14 15h6v2h-6z"></path>
+                      <path d="M10 7.53v8.93a.28.28 0 00.44.23l6.43-4.44a.33.33 0 00.06-.46l-.06-.06-6.43-4.43a.28.28 0 00-.44.23z"></path>
+                    </svg>
+                  <p class="text-xs hidden lg:block 2xl:block"> Learning </p>
+                </a>
+                </div>
+            </div>
+          </div>
+      </div>
+    </nav>
+
+    <!-- Main content -->
+    <div class="mx-auto   px-0 py-2 ">
+      <div class="flex flex-col md:flex-row   w-full gap-0 md:gap-8 2xl:gap-8 lg:gap-8 py-0 md:py-3 md:px-20 2xl:px-0 2xl:w-3/5 mx-auto px-0">
+        <!-- Profile -->
+        <section class="w-full md:w-2/6 rounded-md overflow-hidden bg-white h-96">
+  
+          <!-- Profile name and image section -->
+          <div class="relative h-40"> 
+            <div class="h-14">
+              <img class="w-full h-full object-cover" src="./assets/code-bg.jpg" alt="Profile background image">
+            </div>
+            <div class="absolute top-5 w-full">
+              <div class="h-20 w-20 rounded-full overflow-hidden border-4 border-white  mx-auto mb-1">
+                <img class="w-full h-full object-cover " src="./assets/profile-image.jpg" alt="Profile image">
+              </div>
+              <h2 class="text-center"> Jonathan Wicked</h2>
+              <p class="text-center text-gray-400 text-sm pb-4"> Associate Developer </p>
+              <hr> 
+            </div>
+          </div>
+          
+          <!-- impression and post section -->
+          <div class="text-gray-500 py-2">
+            <div class="flex text-sm justify-between p-1 hover:bg-gray-200 hover:text-black"> 
+              <p> Profile viewers </p>
+              <p class="text-blue-500"> 45</p>
+            </div>
+  
+            <div class="flex text-sm justify-between p-1 hover:bg-gray-200 hover:text-black"> 
+              <p> Post impression </p>
+              <p class="text-blue-400"> 45</p>
+            </div>
+          </div>
+          <hr>
+          <!-- Premium ads section  -->
+          <div class="p-1 py-2 hover:cursor-pointer hover:bg-gray-200 hover:rounded-md hover:shadow-md">
+            <p class="text-xs text-gray-500"> Up-skill with exclusive courses & certificates</p>
+            <div class="flex items-baseline gap-1 py-2 "> 
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.25 0C1.00736 0 0 1.00736 0 2.25V11.75C0 12.9926 1.00736 14 2.25 14H11.75C12.9926 14 14 12.9926 14 11.75V2.25C14 1.00736 12.9926 0 11.75 0H2.25Z" fill="url(#paint0_linear_2_624)"/>
+                <defs>
+                <linearGradient id="paint0_linear_2_624" x1="14" y1="0" x2="0" y2="14" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#FDD8A2"/>
+                <stop offset="1" stop-color="#CA7900"/>
+                </linearGradient>
+                </defs>
+                </svg>
+                <a  href="#" class="text-sm hover:underline"> Learn New Skills, Try Premium Free</a>
+            </div>  
+          </div>
+          <hr>
+  
+          <!-- my-items section  -->
+          <div class="flex items-center gap-2 py-2 px-1  hover:cursor-pointer hover:bg-gray-200 hover:rounded-md hover:shadow-md ">
+            <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M3.32022 0.577409C5.18374 0.361142 7.07904 0.25 9 0.25C10.921 0.25 12.8163 0.361142 14.6798 0.57741C16.1772 0.751186 17.25 2.03722 17.25 3.50699V19C17.25 19.2599 17.1154 19.5013 16.8943 19.638C16.6732 19.7746 16.3971 19.7871 16.1646 19.6708L9 16.0885L1.83541 19.6708C1.60292 19.7871 1.32681 19.7746 1.1057 19.638C0.884589 19.5013 0.75 19.2599 0.75 19V3.50699C0.75 2.03722 1.82283 0.751186 3.32022 0.577409Z" fill="#666666"/>
+              </svg>
+              
+            <p> My items </p>
+          </div>
+          
+        </section>
+  
+        <!-- Post feed 2 -->
+        <selection class="w-full md:w-5/6  rounded-lg">
+  
+          <!-- feed first section -->
+          <div class="bg-white rounded-lg">
+            <!-- add post a feed section  -->
+            <div class="flex w-full py-2 px-2">
+              <div class="h-14 w-14 rounded-full overflow-hidden border-4 border-white  mx-auto ">
+                <img class=" h-full object-cover " src="./assets/profile-image.jpg" alt="Profile image">
+              </div>
+              <button class="w-5/6 bg-gray-200 rounded-3xl pl-5 mr-3 text-left border border-gray-500"> Start a post</button>
+            </div>
+          
+            <!-- event media and write articles -->
+            <div class="flex w-full justify-around py-4">
+              <div class="flex items-center gap-2">
+          
+                <svg width="22" height="18" viewBox="0 0 22 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M1.25 12.75L6.40901 7.59099C7.28769 6.71231 8.71231 6.71231 9.59099 7.59099L14.75 12.75M13.25 11.25L14.659 9.84099C15.5377 8.96231 16.9623 8.96231 17.841 9.84099L20.75 12.75M2.75 16.5H19.25C20.0784 16.5 20.75 15.8284 20.75 15V3C20.75 2.17157 20.0784 1.5 19.25 1.5H2.75C1.92157 1.5 1.25 2.17157 1.25 3V15C1.25 15.8284 1.92157 16.5 2.75 16.5ZM13.25 5.25H13.2575V5.2575H13.25V5.25ZM13.625 5.25C13.625 5.45711 13.4571 5.625 13.25 5.625C13.0429 5.625 12.875 5.45711 12.875 5.25C12.875 5.04289 13.0429 4.875 13.25 4.875C13.4571 4.875 13.625 5.04289 13.625 5.25Z"
+                    stroke="#378FE9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <p>Media </p>
+              </div>
+              <div class="flex items-center gap-2">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M4.75 1V3.25M15.25 1V3.25M1 16.75V5.5C1 4.25736 2.00736 3.25 3.25 3.25H16.75C17.9926 3.25 19 4.25736 19 5.5V16.75M1 16.75C1 17.9926 2.00736 19 3.25 19H16.75C17.9926 19 19 17.9926 19 16.75M1 16.75V9.25C1 8.00736 2.00736 7 3.25 7H16.75C17.9926 7 19 8.00736 19 9.25V16.75M10 10.75H10.0075V10.7575H10V10.75ZM10 13H10.0075V13.0075H10V13ZM10 15.25H10.0075V15.2575H10V15.25ZM7.75 13H7.7575V13.0075H7.75V13ZM7.75 15.25H7.7575V15.2575H7.75V15.25ZM5.5 13H5.5075V13.0075H5.5V13ZM5.5 15.25H5.5075V15.2575H5.5V15.25ZM12.25 10.75H12.2575V10.7575H12.25V10.75ZM12.25 13H12.2575V13.0075H12.25V13ZM12.25 15.25H12.2575V15.2575H12.25V15.25ZM14.5 10.75H14.5075V10.7575H14.5V10.75ZM14.5 13H14.5075V13.0075H14.5V13Z"
+                    stroke="#C37D16" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+          
+                <p>Event </p>
+              </div>
+              <div class="flex items-center gap-2">
+          
+                <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M10 4.5H11.5M10 7.5H11.5M4 10.5H11.5M4 13.5H11.5M14.5 4.5H17.875C18.4963 4.5 19 5.00368 19 5.625V15C19 16.2426 17.9926 17.25 16.75 17.25M14.5 4.5V15C14.5 16.2426 15.5074 17.25 16.75 17.25M14.5 4.5V1.875C14.5 1.25368 13.9963 0.75 13.375 0.75H2.125C1.50368 0.75 1 1.25368 1 1.875V15C1 16.2426 2.00736 17.25 3.25 17.25H16.75M4 4.5H7V7.5H4V4.5Z"
+                    stroke="#E06847" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <p>Write Article </p>
+              </div>
+            </div>
+  
+  
+          </div>
+          
+          <!-- sort partition section  -->
+          <div class="flex items-center gap-10 py-3">
+            <div class="w-4/6 border-b-2 bg-dark-800"></div>
+            <p class="text-xs"> Sort by: Top 
+          </p>
+          <svg width="10" height="8" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.554 3.22253C15.2128 2.24259 14.5335 0.920979 13.3532 0.886322L1.57715 0.540527C0.396873 0.50587 -0.358825 1.78534 0.241298 2.80224L5.85508 12.3148C6.41588 13.265 7.77617 13.305 8.39176 12.3893L14.554 3.22253Z" fill="#0F172A"/>
+            </svg>
+          </div>
+  
+          <!-- feed second section  -->
+          <div class="bg-white rounded-lg">
+  
+            <!-- add post a feed section  -->
+            <div class="flex">
+              <!-- post header left  -->
+              <div class="flex w-full py-2 px-2 justify-start gap-2">
+                <div class="h-14 w-14 rounded-full overflow-hidden border-4 border-white   ">
+                  <img class=" h-full object-cover " src="./assets/profile-image.jpg" alt="Profile image">
+                </div>
+          
+                <div >
+                    <p class="text-sm "> Jonathan Wicked </p>
+                    <p class="text-xs text-gray-500"> Software Engineer • 2nd </p>
+                    <div class="flex gap-1">
+                      <p class="text-xs text-gray-500 "> time and world logo •  </p>
+                        <svg width="15" height="15" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M10 0.25C4.61522 0.25 0.25 4.61522 0.25 10C0.25 15.3848 4.61522 19.75 10 19.75C15.3848 19.75 19.75 15.3848 19.75 10C19.75 4.61522 15.3848 0.25 10 0.25ZM4.26197 4.0723C2.71293 5.57208 1.75 7.67359 1.75 10C1.75 14.5563 5.44365 18.25 10 18.25C14.5563 18.25 18.25 14.5563 18.25 10C18.25 7.24461 16.8992 4.80472 14.8237 3.3064C14.4863 3.84545 14.0374 4.30831 13.5056 4.66289L12.2499 5.5L12.4145 5.82918C12.6835 6.3671 12.2923 7 11.6909 7C11.5653 7 11.4414 6.97076 11.3291 6.91459L10.7252 6.61262C10.2921 6.39607 9.76896 6.48095 9.42656 6.82336L9.29541 6.9545C8.85607 7.39384 8.85607 8.10615 9.29541 8.54549L9.59054 8.84062C9.84745 9.09753 10.2126 9.21455 10.571 9.15482L11.7411 8.95981C12.0641 8.90596 12.3946 8.99558 12.6462 9.20525L13.9755 10.313C14.2962 10.5802 14.4356 11.0073 14.3344 11.4122C13.9519 12.9419 13.1609 14.339 12.046 15.4539L11.3233 16.1766C10.9809 16.519 10.4578 16.6039 10.0247 16.3874L9.8718 16.3109C9.49067 16.1204 9.24992 15.7308 9.24992 15.3047V14.216C9.24992 13.9176 9.13139 13.6315 8.92041 13.4205L7.57328 12.0734C7.23087 11.731 7.14599 11.2079 7.36254 10.7747L7.74992 10L6.10954 8.35962C5.22527 7.47535 4.6394 6.33689 4.43381 5.10337L4.26197 4.0723Z" fill="#666666"/>
+                        </svg>
+                    </div>
+                </div>
+              
+              </div>
+  
+              <!-- post header right -->
+              <div class="flex gap-3 pr-3 pt-3 ">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.75 12C6.75 12.4142 6.41421 12.75 6 12.75C5.58579 12.75 5.25 12.4142 5.25 12C5.25 11.5858 5.58579 11.25 6 11.25C6.41421 11.25 6.75 11.5858 6.75 12Z" stroke="#0F172A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12.75 12C12.75 12.4142 12.4142 12.75 12 12.75C11.5858 12.75 11.25 12.4142 11.25 12C11.25 11.5858 11.5858 11.25 12 11.25C12.4142 11.25 12.75 11.5858 12.75 12Z" stroke="#0F172A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M18.75 12C18.75 12.4142 18.4142 12.75 18 12.75C17.5858 12.75 17.25 12.4142 17.25 12C17.25 11.5858 17.5858 11.25 18 11.25C18.4142 11.25 18.75 11.5858 18.75 12Z" stroke="#0F172A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  
+                <svg width="20" height="19" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6.57837 18L18.5784 6M6.57837 6L18.5784 18" stroke="#0F172A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  
+              </div>
+            </div>
+  
+            <!--  post content section  -->
+            <div class="py-2">
+              
+              <p class="px-2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt </p>
+              
+                  <p class="px-2 text-right"> see more... </p>
+              <!-- post image -->
+              <div>
+                <img class="border-2 border-gray-100" src="./assets/postdemo.jpg" alt=" Post main picture">
+              </div>
+              <div class="flex justify-between px-2 py-4 items-center text-xs">
+                <div class="flex relative justify-center">
+                  <img  src="https://static.licdn.com/aero-v1/sc/h/8ekq8gho1ruaf8i7f86vd1ftt" alt="like">
+                  <img class="absolute left-2" src="https://static.licdn.com/aero-v1/sc/h/cpho5fghnpme8epox8rdcds22" alt="love"> 
+                  <img class="absolute left-4" src="https://static.licdn.com/aero-v1/sc/h/b1dl5jk88euc7e9ri50xy5qo8" alt="celebrate">
+                  <p class="pl-5"> John Wicked and 688 others</p>
+                </div>
+                <p> 3 comments • 1 Repost </p>
+              </div>
+              <hr>
+  
+              <!-- post action bar section -->
+              <div class="flex justify-around"> 
+                <!-- action one  -->
+                <div class="flex gap-2 py-2">
+                  <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.63257 9.25C6.43892 9.25 7.16648 8.80416 7.6641 8.16967C8.43726 7.18384 9.41169 6.3634 10.5255 5.77021C11.2477 5.38563 11.8743 4.81428 12.1781 4.05464C12.3908 3.5231 12.5 2.95587 12.5 2.38338V1.75C12.5 1.33579 12.8358 1 13.25 1C14.4926 1 15.5 2.00736 15.5 3.25C15.5 4.40163 15.2404 5.49263 14.7766 6.46771C14.511 7.02604 14.8836 7.75 15.5019 7.75M15.5019 7.75H18.6277C19.6544 7.75 20.5733 8.44399 20.682 9.46486C20.7269 9.88708 20.75 10.3158 20.75 10.75C20.75 13.5976 19.7581 16.2136 18.101 18.2712C17.7134 18.7525 17.1142 19 16.4962 19H12.4802C11.9966 19 11.5161 18.922 11.0572 18.7691L7.94278 17.7309C7.48393 17.578 7.00342 17.5 6.51975 17.5H4.90421M15.5019 7.75H13.25M4.90421 17.5C4.98702 17.7046 5.07713 17.9054 5.17423 18.1022C5.37137 18.5017 5.0962 19 4.65067 19H3.74289C2.85418 19 2.02991 18.482 1.77056 17.632C1.43208 16.5226 1.25 15.3451 1.25 14.125C1.25 12.5725 1.54481 11.0889 2.08149 9.72711C2.38655 8.95303 3.16733 8.5 3.99936 8.5H5.05212C5.52404 8.5 5.7973 9.05591 5.5523 9.45925C4.72588 10.8198 4.25 12.4168 4.25 14.125C4.25 15.3185 4.48232 16.4578 4.90421 17.5Z" stroke="#0F172A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <P> Like </P>
+                </div>
+  
+                <!-- action two -->
+                <div class="flex gap-2 py-2">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.625 9.75C8.625 9.95711 8.45711 10.125 8.25 10.125C8.04289 10.125 7.875 9.95711 7.875 9.75C7.875 9.54289 8.04289 9.375 8.25 9.375C8.45711 9.375 8.625 9.54289 8.625 9.75ZM8.625 9.75H8.25M12.375 9.75C12.375 9.95711 12.2071 10.125 12 10.125C11.7929 10.125 11.625 9.95711 11.625 9.75C11.625 9.54289 11.7929 9.375 12 9.375C12.2071 9.375 12.375 9.54289 12.375 9.75ZM12.375 9.75H12M16.125 9.75C16.125 9.95711 15.9571 10.125 15.75 10.125C15.5429 10.125 15.375 9.95711 15.375 9.75C15.375 9.54289 15.5429 9.375 15.75 9.375C15.9571 9.375 16.125 9.54289 16.125 9.75ZM16.125 9.75H15.75M2.25 12.7593C2.25 14.3604 3.37341 15.754 4.95746 15.987C6.04357 16.1467 7.14151 16.27 8.25 16.3556V21L12.4335 16.8165C12.6402 16.6098 12.9193 16.4923 13.2116 16.485C15.1872 16.4361 17.1331 16.2678 19.0425 15.9871C20.6266 15.7542 21.75 14.3606 21.75 12.7595V6.74056C21.75 5.13946 20.6266 3.74583 19.0425 3.51293C16.744 3.17501 14.3926 3 12.0003 3C9.60776 3 7.25612 3.17504 4.95747 3.51302C3.37342 3.74593 2.25 5.13956 2.25 6.74064V12.7593Z" stroke="#0F172A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <P> Comment </P>
+                </div>
+  
+                <!-- action three -->
+                <div class="flex gap-2 py-2">
+                  <img src="./assets/repost.png" width="18" height="15" alt="Re-post">
+                    <P> Repost </P>
+                </div>
+                
+                <!-- action three -->
+                <div class="flex gap-2 py-2 ">
+                    <img src="./assets/send2.png" alt="forward send" >
+                    <P> Send </P>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+  
+        </selection>
+  
+  
+        <!-- LinkedIn News section  -->
+        <section class="hidden w-3/6 bg-white p-2 rounded-md md:h-96 lg:block 2xl:block"> 
+          <!-- heading -->
+          <div class="flex justify-between items-center px-2">
+            <p class=" py-3"> LinkedIn News </p>
+            <img src="./assets/notification.png" alt="notification">
+          </div>
+  
+          <!-- news items  -->
+          <div class="pl-2 py-3">
+            <li> News 1 takers for personal loans</li>
+          <p class="pl-6 text-gray-500 text-sm">  4d ago • 23,455 readers</p>
+          </div>
+  
+          <div class="pl-2 py-3">
+            <li> News 2 takers for personal loans</li>
+          <p class="pl-6 text-gray-500 text-sm">  4d ago • 23,455 readers</p>
+          </div>
+  
+          <div class="pl-2 py-3">
+            <li> News 3 takers for personal loans</li>
+          <p class="pl-6 text-gray-500 text-sm">  4d ago • 23,455 readers</p>
+          </div>
+          
+          <div class="pl-2 py-3">
+            <li> New 4 takers for personal loans</li>
+          <p class="pl-6 text-gray-500 text-sm">  4d ago • 23,455 readers</p>
+          </div>
+  
+  
+          <div class="flex items-center gap-2">
+            <p class="pl-2 py-2"> See more </p>
+            <svg width="10" height="10" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.554 3.22253C15.2128 2.24259 14.5335 0.920979 13.3532 0.886322L1.57715 0.540527C0.396873 0.50587 -0.358825 1.78534 0.241298 2.80224L5.85508 12.3148C6.41588 13.265 7.77617 13.305 8.39176 12.3893L14.554 3.22253Z" fill="#0F172A"/>
+              </svg>
+          </div>
+          
+        
+        </section>
+      </div>
+    </div>
+  
+</body>
+</html>
